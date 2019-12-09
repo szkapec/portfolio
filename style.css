@@ -47,11 +47,13 @@ section {
     transform: translate(-50%,-50%)
 }
 section h1 {
+    color: rgb(35, 46, 171);
     text-align: center;
     font-size: 4em;
 
 }
 section h3 {
+    color: rgb(63, 71, 162);
     text-align: center;
     font-size: 2em
 }
@@ -71,27 +73,71 @@ section h3 {
     text-align: center;
 }
 
-img.gmail{
+.all{
     height: 70px;
     margin: 30px;
     text-align: center;
-}
-
-.gmailDymek {
     animation-name: szerokosc;
     font-size: 30px;
     color: white;
     font-weight: 600;
     transition: 2s;
-    transition-duration: 3s;
-    animation-iteration-count:infinite;
+}
+.odpowiedzz:before {
+    content: "";
+    opacity: 0;
+
+    translate: inherit;
+    transition: 1s;
 }
 
-@keyframes szerokosc {
-    0% {
-        width: 150px;
-    }
-    100% {
-        width: 10px;
-    }
+.twopicture:hover ~ .odpowiedzz:before  {
+    opacity: 1;
+    content: "mateusz.kapron24@gmail.com";
+    font-size: 25px;
+    color: rgb(141, 216, 130);
+    font-weight: 600;
+    
 }
+.onepicture:hover ~ .odpowiedzz:before {
+    opacity: 1;
+    content: "661-360-889";
+    font-size: 25px;
+    color: rgb(199, 44, 44);
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+/* koniec strony pierwszej ------------------------------------------------------------ */
+
+.pageTwo {
+    height: 100vh;
+    width: 100%;
+    background-color: #513e3e;
+}
+.pageTwo {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .sectionPage {
+         grid-area: 1 / 1 / 2 / 2; 
+        
+        }
+    .opis { grid-area: 1 / 2 / 2 / 3; }
+    .szkapec {
+         grid-area: 2 / 1 / 3 / 2;
+         width: 200px;
+         height: 400px;
+
+     }
+    .opisCiagDalszy { grid-area: 2 / 2 / 3 / 3; }
+
+
+
+
+    main {
+        height: 100vh;
+    }
