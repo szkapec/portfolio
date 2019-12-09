@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header.head {
+    display: block;
+    background-image: url('pictures/gory.jpg');
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+ul.nawigacja {
+    display: flex;
+    float: right;
+    list-style-type: none;
+    margin: 20px 30px;
+}
+
+ul.nawigacja li {
+    font-size: 22px;
+    margin: 15px;
+}
+ul.nawigacja li a {
+    text-decoration: none;
+    color: black;
+
+}
+ul.nawigacja li a:hover {
+    color: cyan;
+    font-size: 25px;
+    border-bottom: 1px solid cyan; 
+}
+
+ul.nawigacja li a.one {
+    color: blue;
+    font-weight: 700;
+}
+/* --------------------------------------nawigacja skończona */
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+section h1 {
+    text-align: center;
+    font-size: 4em;
+
+}
+section h3 {
+    text-align: center;
+    font-size: 2em
+}
+
+.powieksz {
+    height: 70px;
+    margin: 30px;
+}
+.image {
+    text-align: center;
+}
+
+.powieksz:hover {
+    height: 80px;
+}
+.imagetwo {
+    text-align: center;
+}
+
+img.gmail{
+    height: 70px;
+    margin: 30px;
+    text-align: center;
+}
+
+.gmailDymek {
+    animation-name: szerokosc;
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    transition: 2s;
+    transition-duration: 3s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes szerokosc {
+    0% {
+        width: 150px;
+    }
+    100% {
+        width: 10px;
+    }
+}
