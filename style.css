@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Jura", sans-serif;
 }
 
 
@@ -11,6 +12,7 @@ header.head {
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
+     font-family: "Jura", sans-serif;
 }
 ul.nawigacja {
     display: flex;
@@ -43,20 +45,64 @@ ul.nawigacja li a.one {
 section {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 30%;
     transform: translate(-50%,-50%)
 }
 section h1 {
     color: rgb(35, 46, 171);
     text-align: center;
     font-size: 4em;
+    animation-name: name;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
 
 }
 section h3 {
     color: rgb(63, 71, 162);
     text-align: center;
-    font-size: 2em
+    font-size: 2em;
+    animation-name: h3;
+    animation-duration: 3s; 
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
 }
+
+@keyframes name {
+    0%{
+        color: black;
+        transform: translate(-150%,-50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(-0%,-50%);
+        opacity: 1;
+    }
+}
+
+@keyframes h3 {
+    0%{
+        color: black;
+        transform: translate(+150%,-50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(-0%,-50%);
+        opacity: 1;
+    }
+}
+
+@keyframes imageAnimation {
+    from {
+        
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
 
 .powieksz {
     height: 70px;
@@ -64,6 +110,8 @@ section h3 {
 }
 .image {
     text-align: center;
+    animation-name: imageAnimation;
+    animation-duration: 3s;
 }
 
 .powieksz:hover {
@@ -71,6 +119,8 @@ section h3 {
 }
 .imagetwo {
     text-align: center;
+    animation-name: imageAnimation;
+    animation-duration: 3s;
 }
 
 .all{
@@ -82,8 +132,11 @@ section h3 {
     color: white;
     font-weight: 600;
     transition: 2s;
+    
 }
 .odpowiedzz:before {
+    box-sizing: border-box;
+    padding: 50px;
     content: "";
     opacity: 0;
 
@@ -107,39 +160,227 @@ section h3 {
     font-weight: 600;
     letter-spacing: 5px;
 }
+
+
+
 /* koniec strony pierwszej ------------------------------------------------------------ */
 
 .pageTwo {
     height: 100vh;
     width: 100%;
-    background-color: #513e3e;
+    /* background-color: #513e3e; */
+    background-color: wheat;
 }
+
+
 .pageTwo {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    overflow:hidden;
     }
     
-    .sectionPage {
-         grid-area: 1 / 1 / 2 / 2; 
+    .slider { 
+        grid-area: 1 / 1 / 2 / 2; 
         
-        }
-    .opis { grid-area: 1 / 2 / 2 / 3; }
-    .imageMaenson {
-         grid-area: 2 / 1 / 3 / 2;
-         width: 200px;
-         height: 400px;
-
-     }
-    .opisCiagDalszy { grid-area: 2 / 2 / 3 / 3; }
-
-
-
-
-    .umiejetnosci {
-        height: 100vh;
-        width: 100%;
-       
     }
+    .opis { 
+        border-left: 1px solid black;
+        grid-area: 1 / 2 / 2 / 3; 
+        text-align: center;
+        justify-content: center;
+    }
+
+
+
+.opis h1 {
+    padding: 30px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+ .opis h3,h4, p {
+     margin: 30px;
+     font-size: 30px;
+ }
+ .opis__github {
+         height: 80px;
+        margin: 30px;
+ }
+
+
+
+    /* SLIDERRRRRR---------------------------- */
+
+
+    .slider {
+        max-width: 800px;
+        margin: 10px;
+      }
+      
+      .slider__images-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 66.66667%;
+      }
+      
+      .slider__image-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+      
+      .slider__image-container img {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        width: 800px;
+        position: absolute;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+      }
+      
+      .slider__image-container.slider__image-container--first {
+        width: 100%;
+      }
+      
+      .slider__image-container.slider__image-container--second {
+        width: 50%;
+      }
+      
+      .slider__divider {
+        position: absolute;
+        width: 3px;
+        height: 100%;
+        top: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+        background: black;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+      }
+      
+      .slider__divider .slider__handle {
+        border-radius: 50%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+        background: white;
+        width: 40px;
+        height: 40px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        cursor: pointer;
+      }
+      /*# sourceMappingURL=style.css.map */
+
+
+
+  /* UMIEJETNOSCI */
+
+    .center {
+        text-align: center;
+        margin: 30px;
+    }
+
+  .umiejetnosci {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100vh;
+    width: 100%;  
+    }
+    
+    .umiejetnosci__pierwsze { 
+        grid-area: 1 / 1 / 2 / 2; 
+        margin: auto;
+    }
+    .umiejetnosci__dwa {
+         grid-area: 2 / 1 / 3 / 2; 
+         margin: auto;
+    }
+    .umiejetnosci__trzecie {
+        grid-area: 3 / 1 / 4 / 2;
+        margin: auto;
+    }
+
+
+    
+.umiejetnosci img {
+    height: 120px;
+    margin: 40px;
+    padding: 0px;
+    transition: 1s;
+}
+
+.umiejetnosci__pierwsze, .umiejetnosci__dwa, .umiejetnosci__trzecie {
+    display: flex;
+    
+}
+.pudelko {
+   position: relative;
+   text-align: center;
+  
+}
+
+.doswiadczenie { 
+    opacity: 0;
+    animation-duration: 2s; 
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+.umiejetnosci img:hover ~.narzedzie {
+    animation-name: stare;
+    opacity: 1;
+    animation-duration: 2s; 
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+.umiejetnosci img:hover ~ .doswiadczenie  {
+    animation-name: html;
+}
+@keyframes stare {
+    from {
+        
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes html {
+    from {
+        
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
