@@ -127,7 +127,7 @@ section h3 {
         
         }
     .opis { grid-area: 1 / 2 / 2 / 3; }
-    .szkapec {
+    .imageMaenson {
          grid-area: 2 / 1 / 3 / 2;
          width: 200px;
          height: 400px;
@@ -138,6 +138,8 @@ section h3 {
 
 
 
-    main {
+    .umiejetnosci {
         height: 100vh;
+        width: 100%;
+       
     }
