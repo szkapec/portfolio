@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css?family=Jura&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+
 </head>
 <body>
     <!-- <img src="pictures/gory.jpg" alt="gory"> -->
     <header class="head">
         <nav>
-            <ul class="nawigacja">
+            <ul class="nawigacja" data-aos="fade-right">
                 <li> <a class="one" href="/"> Home </a></li>
                 <li> <a href=""> O mnie </a></li>
                 <li> <a href="/"> Umiejętności </a></li>
@@ -24,42 +28,142 @@
             <h1>Mateusz Kaproń</h1>
             <h3>Front-end developer</h3>
             <div class="image">
-                <a href="https://www.facebook.com/"> <img class="powieksz" src="pictures/facebook.svg" alt="facebook"> </a>
-                <a href="https://github.com/"><img class="powieksz" src="pictures/github.svg" alt="github"></a>
-                <a href="https://www.linkedin.com/feed/"><img class="powieksz" src="pictures/linkedin.svg" alt="linkedin"></a>
+                <a  href="https://www.facebook.com/"> <img data-aos="fade-right" class="powieksz" src="pictures/facebook.svg" alt="facebook"> </a>
+                <a href="https://github.com/"><img data-aos="flip-left" class="powieksz" src="pictures/github.svg" alt="github"></a>
+                <a  href="https://www.linkedin.com/feed/"><img data-aos="fade-left" class="powieksz" src="pictures/linkedin.svg" alt="linkedin"></a>
             </div>
             <div class="imagetwo">
                     <a class="all onepicture" href="https://mail.google.com/">
-                         <img class="all onepicture" src="pictures/gmail.svg" alt="gmail">
-                        </a>
+                         <img class="all onepicture" src="pictures/gmail.svg" alt="gmail"></a>
                 <img class="all twopicture" src="pictures/phone-call.svg" alt="phone"> 
-                <div class="odpowiedzz"> </div>
+                <div class="odpowiedzz"></div>
             </div>
         </section>
     </header>
 
     <div class="pageTwo">
         <section class="sectionPage">
-                SEKCJA
-        </section>
 
-                <img class="imageMaenson" src="pictures/maenson.jpg" alt="maenson">
+            </section>
 
+
+        <!-- data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" -->
+
+                <!-- <img class="imageMaenson" src="pictures/maenson.jpg" alt="maenson"> -->
+                <div class="slider">
+                        <div class="slider__images-container">
+                            <div class="slider__image-container slider__image-container--first">
+                                <img src="pictures/image1.jpg" alt="jeden" draggable="false">
+                            </div>
+                            <div class="slider__image-container slider__image-container--second">
+                                    <img src="pictures/image2.jpg" alt="dwa" draggable="false">
+                            </div>
+                            <div class="slider__divider">
+                                <div class="slider__handle">
+                                        <i class="fas fa-chevron-left"></i>
+                                        <i class="fas fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+          
         
 
-        <div class="opis">OPIS O MNIE </div>
-        <div class="wyksztalcenie">o wykształceniu</div>
-        <div class="opisCiagDalszy">OPISCIAGDALSZY</div>
+        <div class="opis">
+            <h1 data-aos="zoom-in-down" >Witam na moim portfolio! </h1>
+            <h3>Nazywam się Mateusz Kaproń pochodzę z okolic Lublina i jestem Front-End Developerem </h3>
+            <h4>Posiadam wyższe wykształcenie informatyczne i ponad 2-letnie doświadczenie w pracy jako programista JavaScript.</h4>
+            <p>Moim celem jest stałe poszerzanie wiedzy dotyczącej najbardziej efektywnych technologii i metod tworzenia aplikacji
+                 internetowych. Aktualnie skupiam się na nauce React hooks</p>
+                 <p>Zapraszam do obejrzenia moich projektów oraz na Github :) </p>
+                   <a href="https://github.com/" alt="githublink"> <img data-aos="flip-up"  class="opis__github" src="pictures/github.svg" alt="githube"></a>
+            
+        </div>
+        
     </div>
 
-
+    <h1 class="center">Umiejętności </h1><hr>
     <main class="umiejetnosci">
+       
+        <div class="umiejetnosci__pierwsze" data-aos="flip-down">
+            <div data-aos="fade-right" class="pudelko">
+                <img class="htmlImages" src="pictures/umiejetnosci/html-5.svg" alt="htmlImages">
+                <div class="narzedzie">Html</div>
+                <div class="doswiadczenie">Trzy lata doscwiadczenia</div>
+            </div>
+            <div data-aos="fade-right" class="pudelko">
+                <img  src="pictures/umiejetnosci/css-3.svg" alt="cssImages">
+                <div>CSS</div>
+            </div>
+            <div class="pudelko" data-aos="fade-left">
+                <img  src="pictures/umiejetnosci/sass.svg" alt="sassImages">
+                <div>SASS</div>
+            </div>
+                <div class="pudelko" data-aos="fade-left">
+                    <img  src="pictures/umiejetnosci/bootstrap-4.svg" alt="bootstrapImages">
+                    <div>Bootstrap</div>
+                </div> 
+        </div>
+        <div class="umiejetnosci__dwa" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom">
+            <div class="pudelko" data-aos="fade-right">
+                <img  src="pictures/umiejetnosci/javascript-4.svg" alt="javaScriptImages">
+                <div>JavaScript</div>
+                
+            </div>
+            <div class="pudelko" data-aos="fade-right">
+                <img  src="pictures/umiejetnosci/react.svg" alt="reactImages">
+                <div>React</div>
+            </div>
+            <div class="pudelko" data-aos="flip-left">
+                <img  src="pictures/umiejetnosci/pobrane.png" alt="vueImages">
+                <div>Vue</div>
+            </div>
+            <div class="pudelko" data-aos="fade-left">
+                <img  src="pictures/umiejetnosci/npmlogo.png" alt="npmImages">
+                <div>NPM</div>
+            </div>
+            <div class="pudelko" data-aos="fade-left">
+                <img  src="pictures/umiejetnosci/java.svg" alt="javaImages">
+                <div>Java</div>
+            </div>
+            
+            
+        </div>
+        <div class="umiejetnosci__trzecie" data-aos="flip-up">
+            <div class="pudelko" data-aos="fade-right">
+                <img  src="pictures/umiejetnosci/ajax-icon-7.jpg" alt="ajaxImages">
+                <div>AXAX</div>
+            </div>
+            <div class="pudelko" data-aos="fade-right">
+                <img  src="pictures/umiejetnosci/mysql-5.svg" alt="mySqlImages">
+                <div>MySQL</div>
+            </div>
+            <div class="pudelko" data-aos="fade-left">
+                <img  src="pictures/umiejetnosci/Git_icon.svg" alt="gitImages">
+                <div>Git</div>
+            </div>
+            <div class="pudelko" data-aos="fade-left">
+                <img  src="pictures/umiejetnosci/cpp.svg" alt="cppImages">
+                <div>C++</div>
+            </div>       
+        </div>
     </main>
 
 
 
 
 <footer></footer>
-    <script src="main.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+      duration: 2000,
+      once: true
+  });
+</script>
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
