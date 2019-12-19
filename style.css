@@ -5,7 +5,7 @@
 }
 
 
-header.head {
+.head {
     display: block;
     background-image: url('pictures/gory.jpg');
     background-size: 100% 100vh;
@@ -14,11 +14,30 @@ header.head {
     height: 100vh;
      font-family: "Jura", sans-serif;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ul.nawigacja {
     display: flex;
     float: right;
     list-style-type: none;
     margin: 20px 30px;
+    flex-wrap: wrap
 }
 
 ul.nawigacja li {
@@ -42,13 +61,13 @@ ul.nawigacja li a.one {
 }
 /* --------------------------------------nawigacja skończona */
 
-section {
+.sectionOne {
     position: absolute;
     top: 50%;
     left: 30%;
     transform: translate(-50%,-50%)
 }
-section h1 {
+.sectionOne h1 {
     color: rgb(35, 46, 171);
     text-align: center;
     font-size: 4em;
@@ -58,7 +77,7 @@ section h1 {
     animation-timing-function: ease-in-out;
 
 }
-section h3 {
+.sectionOne  h3 {
     color: rgb(63, 71, 162);
     text-align: center;
     font-size: 2em;
@@ -299,53 +318,55 @@ section h3 {
 
 
   /* UMIEJETNOSCI */
+  .center {
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 30px;
+    font-weight: 700;
+}
 
-    .center {
-        text-align: center;
-        margin: 30px;
-        font-weight: 700;
-    }
+.umiejetnosci {
+display: grid;
+background-color: rgb(164, 135, 135);
+grid-template-columns: 1fr;
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+height: 100vh;
+width: 100%;  
+}
 
-  .umiejetnosci {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    height: 100vh;
-    width: 100%;  
-    }
-    
-    .umiejetnosci__pierwsze { 
-        grid-area: 1 / 1 / 2 / 2; 
-        margin: auto;
-    }
-    .umiejetnosci__dwa {
-         grid-area: 2 / 1 / 3 / 2; 
-         margin: auto;
-    }
-    .umiejetnosci__trzecie {
-        grid-area: 3 / 1 / 4 / 2;
-        margin: auto;
-    }
+.umiejetnosci__pierwsze { 
+    grid-area: 1 / 1 / 2 / 2; 
+    margin: auto;
+}
+.umiejetnosci__dwa {
+     grid-area: 2 / 1 / 3 / 2; 
+     margin: auto;
+}
+.umiejetnosci__trzecie {
+    grid-area: 3 / 1 / 4 / 2;
+    margin: auto;
+}
 
 
-    
+
 .umiejetnosci img {
-    height: 120px;
-    margin: 40px;
-    padding: 0px;
-    transition: 1s;
+height: 120px;
+margin: 40px;
+padding: 0px;
+transition: 1s;
 }
 
 .umiejetnosci__pierwsze, .umiejetnosci__dwa, .umiejetnosci__trzecie {
-    display: flex;
-    
+display: flex;
+
 }
 .pudelko {
-   position: relative;
-   text-align: center;
-  
+position: relative;
+text-align: center;
+
 }
 
 .doswiadczenie { 
@@ -355,7 +376,7 @@ section h3 {
 
 }
 .pudelko img {
-    filter: brightness(0.8);
+filter: brightness(0.8);
 }
 
 .umiejetnosci img:hover ~ .narzedzie {
@@ -365,32 +386,32 @@ section h3 {
     animation-fill-mode: forwards;
 }
 .umiejetnosci img:hover ~ .doswiadczenie  {
-    animation-name: html;
+animation-name: html;
 }
 .pudelko img:hover {
-    filter: brightness(1);
+filter: brightness(1);
 }
 
 @keyframes stare {
-    0%{
-        opacity: 1;
-    }
-    100%{
-        transform: translateY(-80px);
-        opacity: 0;
-    }
+0%{
+    opacity: 1;
+}
+100%{
+    transform: translateY(-80px);
+    opacity: 0;
+}
 
 }
 
 @keyframes html {
-    0% {
-        transform: translateY(-30px);
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(-10px);
-    }
+0% {
+    transform: translateY(-30px);
+    opacity: 0;
+}
+100%{
+    opacity: 1;
+    transform: translateY(-10px);
+}
 
 }
 
@@ -404,6 +425,7 @@ section h3 {
     background-color:#2b2f38;
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 
@@ -420,45 +442,542 @@ section h3 {
     position: relative;
     margin: 10px auto;
     text-align: center;
-    height: 30%;
+    /* height: 0%; */
+}
+.oferta div .oferta__opis {
+    font-size: 40px;
+}
+
+.oferta div {
+    font-size: 30px
 }
 .oferta div > div {
-    
-    font-size: 30px;
-
+    text-align: center;
+    margin: 20px 0px;
 }
 
 .oferta img {
-    height: 100px;
+    height: 50px;
 }
 
 
 .oferta  nav {
     width: 100vw;
-    top: 0px;
-    box-sizing: border-box;
     padding: 20px;
     border-bottom: 1px dotted black;
     display: flex;
     flex-wrap: wrap; 
 }
-.stos__tech {
+.stos .stos__tech {
     font-weight: 700;
     font-size: 30px;
     width: 100%;
     border-bottom: 1px solid black;
 }
-.stos p {
+.zaawansowane{
     font-weight: 700;
     font-size: 30px;
     width: 100%;
     border-bottom: 1px dotted black;
+    margin: 0px 30px;
 }
+.stos__reg {
+    font-weight: 700;
+    font-size: 30px;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px dotted black;
+}
+
 .stos div {
-    height: 30px;
-    margin: 10px;
-    padding: 20px;
+    height: 50px;
+    width: 100px;
+    margin: 40px 30px;
+    margin-bottom: 50px;
+
+ 
 }
-.stos div img { 
+
+
+.project {
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+}
+
+.project .obojetneOne img {
+    height: 400px;
+    margin: 100px;
+    box-shadow: 0 20px 50px rgba(0,0,0,.5)
+}
+
+
+
+
+
+/* -------------------------MEDIA */
+
+
+@media (min-width: 100px) {
+    .head {
+        background-image: url('pictures/gory-przyciete2.jpg');
+        height: 100vh;
+        width: 100vw;
+        background-size:  cover;
+    }
+    ul.nawigacja li {
+        font-size: 12px;
+    }
+    ul.nawigacja li a:hover {
+        color: cyan;
+        font-size: 16px;
+        border-bottom: 1px solid cyan; 
+    }
+    .sectionOne h1 {
+        font-size: 1em;
+    }
+    .sectionOne  h3 {
+        font-size: 0.7em;
+    }
+    .all{
+        height: 19px;
+    }
+    .powieksz {
+        height: 20px;
+    }
+    .powieksz:hover {
+        height: 30px;
+    }
+
+
+/* strona 2 */
+.pageTwo {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    }
+    .slider { 
+        grid-area: 2 / 1 / 3 / 2; 
+    }
+    .opis { 
+        grid-area: 1 / 1 / 2 / 2; 
+    }
+
+.opis h1 {
+    padding: 10px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+ .opis h3,h4, p {
+     margin: 10px;
+     font-size: 15px;
+ }
+ .opis__github {
+         height: 40px;
+        margin: 20px;
+ }
+
+ /* STRONA 3 UMIEJETNOSCI */
+ .center {
+    font-size: 20px;
+    margin: 0;
+}
+
+.umiejetnosci img {
+    height: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.umiejetnosci__pierwsze, .umiejetnosci__dwa, .umiejetnosci__trzecie {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pudelko {
+    position: relative;
+    text-align: center;
+    margin: 0;
+    height: 90px;
+    width: 60px;
+}
+.pudelko .narzedzie {
+    font-size: 10px;
+}
+.doswiadczenie { 
+    font-size: 10px;
+}
+
+
+/* Strona 4 co mozna zaoferowac  */
+
+
+
+.oferta__h1 {
+    height: 50px;
+    font-size: 20px;
+}
+.oferta div {
+    position: relative;
+    margin: 20px auto;
+    text-align: center;
+}
+.oferta div .oferta__opis {
+    font-size: 15px;
+}
+
+
+.oferta div > div {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.oferta img {
+    height: 30px;
+}
+
+
+
+/* .oferta  nav {
+    width: 100vw;
+    padding: 0px;
+    border-bottom: 1px dotted black;
+    display: flex;
+    flex-wrap: wrap; 
+} */
+.stos .stos__tech {
+    font-weight: 700;
+    font-size: 10px;
+    width: 100%;
+    margin: 5px;
+    height: 20px;
+    border-bottom: 1px solid black;
+}
+
+.zaawansowane{
+    font-weight: 700;
+    font-size: 15px;
+    width: 100%;
+    border-bottom: 1px dotted black;
+    margin: 0px 20px;
+}
+.stos__reg {
+    font-weight: 700;
+    font-size: 15px;
+    width: 100%;
+    padding: 0px 0;
+    border-bottom: 1px dotted black;
+}
+
+.stos div {
+    height: 50px;
+    width: 100px;
+    margin: 5px 5px;
+    font-size: 15px;
+}
+.stos div > div {
+    margin: 0;
+}
+
+
+
+
+
+
+}
+
+@media (min-width: 600px) {
+    .head {
+        background-image: url('pictures/gory-przyciete1.jpg');
+        height: 100vh;
+        width: 100vw;
+    }
+    ul.nawigacja li {
+        font-size: 16px;
+    }
+    .sectionOne h1 {
+        font-size: 3em;
+    }
+    .sectionOne  h3 {
+        font-size: 2em;
+    }
+    .all{
+        height: 50px;
+    }
+    .powieksz {
+        height: 50px;
+    }
+    .powieksz:hover {
+        height: 60px;
+    }
+
+    /* strona 2 */
+
+    .opis h3,h4, p {
+        margin: 10px;
+        font-size: 20px;
+    }
+    .opis__github {
+        height: 60px;
+       margin: 20px;
+}
+
+/* Strona 3 umiejetnosci */
+.center {
+    font-size: 30px;
+    margin: 0;
+}
+
+.umiejetnosci img {
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.umiejetnosci__pierwsze, .umiejetnosci__dwa, .umiejetnosci__trzecie {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pudelko {
+    position: relative;
+    text-align: center;
+    margin: 20px;
+    height: 90px;
+    width: 60px;
+}
+.pudelko .narzedzie {
+    font-size: 15px;
+}
+.doswiadczenie { 
+    font-size: 15px;
+}
+
+/* strona 4 co mozna zaoferowac */
+
+
+
+.oferta__h1 {
+    height: 60px;
+    font-size: 30px;
+}
+.oferta div {
+    position: relative;
+    margin: 20px auto;
+    text-align: center;
+}
+.oferta div .oferta__opis {
+    font-size: 20px;
+}
+
+
+.oferta div > div {
+    text-align: center;
+    margin: 25px 0px;
+}
+
+.oferta img {
+    height: 40px;
+}
+
+
+
+/* .oferta  nav {
+    width: 100vw;
+    padding: 0px;
+    border-bottom: 1px dotted black;
+    display: flex;
+    flex-wrap: wrap; 
+} */
+.stos .stos__tech {
+    font-weight: 700;
+    font-size: 25px;
+    width: 100%;
+    margin: 15px;
+    height: 30px;
+    border-bottom: 1px solid black;
+}
+
+.zaawansowane{
+    font-weight: 700;
+    font-size: 20px;
+    width: 100%;
+    border-bottom: 1px dotted black;
+    margin: 0px 10px;
+}
+.stos__reg {
+    font-weight: 700;
+    font-size: 20px;
+    width: 100%;
+    padding: 0px 0;
+    border-bottom: 1px dotted black;
+}
+
+.stos div {
+    height: 50px;
+    width: 100px;
+    margin: 5px 5px;
+    font-size: 20px;
+}
+.stos div > div {
+    margin: 0;
+}
+}
+
+
+
+
+
+
+
+    @media (min-width: 900px) {
+        .head {
+            background-image: url('pictures/gory.jpg');
+            height: 100vh;
+            width: 100vw;
+        }
+
+
+
+        /* Strona 2 */
+
+        .pageTwo {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            overflow:hidden;
+            }
+            
+            .slider { 
+                grid-area: 1 / 1 / 2 / 2; 
+                
+            }
+            .opis { 
+                border-left: 1px solid black;
+                grid-area: 1 / 2 / 2 / 3; 
+            }
+
+            /* Strona 3 umiejetnosci */
+
+            .center {
+                font-size: 40px;
+                margin: 0;
+            }
+            
+            .umiejetnosci img {
+                height: 100px;
+                margin: auto;
+                padding: 0px;
+            }
+            
+            .umiejetnosci__pierwsze, .umiejetnosci__dwa, .umiejetnosci__trzecie {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            
+            .pudelko {
+                position: relative;
+                text-align: center;
+                margin: 50px;
+                height: 90px;
+                width: 60px;
+            }
+            .pudelko .narzedzie {
+                font-size: 20px;
+                width: 100px;
+               
+            }
+            .doswiadczenie { 
+                font-size: 15px;
+            }
+
+            /* Strona 4 stos technologiczny  */
+
+            
+.oferta {
+    width: 100%;
+    height: 100vh;
+    background-color:#2b2f38;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+
+.oferta__h1 {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-bottom: 1px dotted black;
+}
+.oferta div {
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    /* height: 0%; */
+}
+.oferta div .oferta__opis {
+    font-size: 25px;
+}
+
+.oferta div {
+    font-size: 30px
+}
+.oferta div > div {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.oferta img {
     height: 50px;
 }
+
+
+.oferta  nav {
+    width: 100vw;
+    padding: 20px;
+    border-bottom: 1px dotted black;
+    display: flex;
+    flex-wrap: wrap; 
+}
+.stos .stos__tech {
+    font-weight: 700;
+    font-size: 30px;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+.zaawansowane{
+    font-weight: 700;
+    font-size: 30px;
+    width: 100%;
+    border-bottom: 1px dotted black;
+    margin: 0px 30px;
+}
+.stos__reg {
+    font-weight: 700;
+    font-size: 30px;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px dotted black;
+}
+
+.stos div {
+    height: 50px;
+    width: 100px;
+    margin: 40px 30px;
+    margin-bottom: 50px;
+
+ 
+}
+
+
+
+
+}
+
+
