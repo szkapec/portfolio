@@ -7,7 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css?family=Jura&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
 
 
 </head>
@@ -262,34 +263,158 @@
 
     <section class="project"> 
         <h1 class="project__h1">
-         Zapraszam do obejrzenia moich projektów 
-         <p class="project__p">Lub zapraszam na mojego Githuba!</p>
+         Zapraszam do oglądania moich projektów 
+         <p class="project__p">Lub zapraszam na mojego Githuba! <a href="https://github.com/szkapec">
+                <img class="img-pictures-github"src="pictures/github.svg" alt="github"></a></p>
         </h1>
        
+        <div class="row text-center">
+                <div class="col-12 col-lg-6">
 
-        <div class="strona">
-            <img class="strona__img" src="pictures/strony/Portfolio.PNG" alt="aplikacja pogodowa">
+
+
+        <h2 class="opis">Portfolio</h2> 
+        <div class="single-project">
+            <img class="strona__img jeden" src="pictures/strony/Portfolio.PNG" alt="aplikacja pogodowa">
+
+            <div class="project-info">
+                <h3 class="info-text">Portfolio</h3>
+                <h3 class="info-text">Wykorzystane technologie:
+                    <p> HTML, CSS, JavaScript, GSAP</p>
+                </h3>
+                <h4 class="info-text">
+                    <div> 
+                        <a href="https://github.com/szkapec/portfolio"> <button type="button" class="btn btn-light">GitHub</button></a>
+                        <a href="https://github.com"> <button type="button" class="btn btn-light">Na żywo</button></a>
+                    </div>
+                </h4>
+            </div>
         </div>
-        <div class="strona">
-            <img class="strona__img"  src="pictures/strony/reactRouter.PNG" alt="">
         </div>
-        <div class="strona">
-            <img class="strona__img"  src="pictures/strony/RobotoSVG.PNG" alt="">
+
+<div class="col-12 col-lg-6">
+        <h2 class="opis">Projekt React Router</h2>
+        <div class="single-project">
+            <img class="strona__img dwa"  src="pictures/strony/reactRouter.PNG" alt="">
+            <div class="project-info">
+                <h3 class="info-text">Projekt React Router</h3>
+                <h3 class="info-text">Wykorzystane Technologie:
+                    <p>HTML, SASS, JavaScript, React, React Router</p>
+                </h3>
+                <h4 class="info-text">
+                        <div> 
+                            <a href="https://github.com/szkapec/projectRouter"> <button type="button" class="btn btn-light">GitHub</button></a>
+                            <a href="https://szkapec.github.io/projectRouter/"> <button type="button" class="btn btn-light">Na żywo</button></a>
+                        </div>
+                    </h4>
+            </div>
         </div>
-        <div class="strona">
+        </div>
+
+<div class="col-12 col-lg-6">
+        <h2 class="opis">Projekt Roboto</h2>
+        <div class="single-project">
+            <img class="strona__img"  src="pictures/strony/RobotoSVG.PNG" alt="robot">
+                <div class="project-info">
+                    <h3 class="info-text">Projekt Roboto</h3>
+                    <h3 class="info-text">Wykorzystane technologie:
+                        <p>HTML, SASS, GSAP, SVG, JavaScript, Timeline</p>
+                    </h3>
+                    <h4 class="info-text">
+                            <div> 
+                                <a href="https://github.com/szkapec/Roboto"> <button type="button" class="btn btn-light">GitHub</button></a>
+                                <a href="https://szkapec.github.io/Roboto"> <button type="button" class="btn btn-light">Na żywo</button></a>
+                            </div>
+                        </h4>
+                </div>
+        </div>
+        </div>
+        <div class="col-12 col-lg-6">
+        <h2 class="opis">Aplikacja pogodowa</h2>
+        <div class="single-project">
             <img class="strona__img"  src="pictures/strony/AplikacjaPogodowaReact.PNG" alt="">
+                <div class="project-info">
+                    <h3 class="info-text">Aplikacja Pogodowa</h3>
+                    <h3 class="info-text">Wykorzystane technologie:
+                        <p>HTML, SASS, JavaScript, React, API</p>
+                    </h3>
+                    <h4 class="info-text">
+                            <div> 
+                                <a href="https://github.com/szkapec/Aplikacja_pogodowa"> <button type="button" class="btn btn-light">GitHub</button></a>
+                                <a href="https://szkapec.github.io/Aplikacja_pogodowa/"> <button type="button" class="btn btn-light">Na żywo</button></a>
+                            </div>
+                        </h4>
+                </div>
         </div>
-        <div class="strona">
+    </div>
+
+    <div class="col-12 col-lg-6">
+        <h2 class="opis">Generowanie użytkownika</h2>
+        <div class="single-project">
             <img class="strona__img"  src="pictures/strony/GenerowanieUżytkownikaReact.PNG" alt="">
+                <div class="project-info">
+                        <h3 class="info-text">Generowanie losowych użytkowników z zewnętrznego API</h3>
+                        <h3 class="info-text">Wykorzystane technologie:
+                            <p>HTML, SASS, JavaScript, React, API</p>
+                        </h3>
+                    <h4 class="info-text">
+                            <div> 
+                                <a href="https://github.com/szkapec/pobieranieDanychzAPI"> <button type="button" class="btn btn-light">GitHub</button></a>
+                                <a href="https://szkapec.github.io/pobieranieDanychzAPI/"> <button type="button" class="btn btn-light">Na żywo</button></a>
+                            </div>
+                        </h4>
+                </div>
         </div>
-        <div class="strona">
+    </div>
+
+    <div class="col-12 col-lg-6">
+        <h2 class="opis">Zadania do wykonania</h2>
+        <div class="single-project">
             <img class="strona__img"  src="pictures/strony/ReactZadaniaDoWykonania.PNG" alt="">
+                <div class="project-info">
+                        <h3 class="info-text">Aplikacja z zadaniami do wykonania</h3>
+                        <h3 class="info-text">Wykorzystane technologie:
+                            <p>HTML, SASS, JavaScript, React</p>
+                        </h3>
+                    <h4 class="info-text">
+                            <div> 
+                                <a href="https://github.com/szkapec/Lista-zadan-do-zrobienia"> <button type="button" class="btn btn-light">GitHub</button></a>
+                                <a href="https://szkapec.github.io/Lista-zadan-do-zrobienia/"> <button type="button" class="btn btn-light">Na żywo</button></a>
+                            </div>
+                        </h4>
+                </div>
+            </div>
         </div>
+</div>
 
 
     </section>
     
+<div class="formularz">
 
+    <div class="formularz-opis">Zapraszam do wypełnienia formularza</div>
+
+
+
+    <form action="mailing.php" method="post">
+
+       Podaj imię:  <input type="text" name="imie" placeholder="Imię" >
+        Adres email: <input type="email" name="email" placeholder="adres e-mail">
+       
+        <div>Wiadomosc: 
+           <textarea rows="2" cols="30">
+            Wpisz text
+            </textarea>
+        </div> 
+
+<input type="submit" value="Wyślij">
+    </form>
+
+
+
+
+    
+</div>
 
 
 
