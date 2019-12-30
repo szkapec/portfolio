@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css?family=Jura&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="style/style.css">
 
 
@@ -395,37 +396,58 @@
     
 <div class="formularz">
 
-    <div class="formularz-opis">Zapraszam do wypełnienia formularza</div>
+    <div class="formularz--opis">Zapraszam do wypełnienia formularza</div>
+
+    <div class="formularz--form">
 
 
 
-    <form action="mailing.php" method="post">
-
-       Podaj imię:  <input type="text" name="imie" placeholder="Imię" >
-        Adres email: <input type="email" name="email" placeholder="adres e-mail">
+<!--  action="mailing.php" method="post" -->
+<form>
+        <div class="form-group">
+          <label for="formGroupExampleInput">Imię:</label>
+          <input type="text" class="form-control col-md-4 mb-3" id="formGroupExampleInput" placeholder="Podaj swoje imię">
+        </div>
+        <div class="form-group">
+                <label for="inputEmail3">Podaj adress Email:</label>
+                <input type="email" class="form-control col-md-4 mb-3" id="inputEmail3" placeholder="name@example.com">
+            </div>
        
-        <div>Wiadomosc: 
-           <!-- <textarea rows="2" cols="30">
-            Wpisz text
-            </textarea> -->
-        </div> 
 
-<input type="submit" value="Wyślij">
-    </form>
+        <div class="form-group">
+                <label for="exampleFormControlTextarea1">Wpisz wiadomość:</label>
+                <textarea class="form-control col-md-4 mb-3" id="exampleFormControlTextarea1" rows="3" placeholder="Napisz do mnie wiadomość"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Wyślij formularz</button>
+      </form>
+<!--  -->
+    </div>
+    <footer> 
 
-
-
-
-    
+        <div class="footer--icon">
+                <div class="footer--img">
+                        <img class="footer--icons" src="pictures/facebook.PNG" alt="fb">
+                        <img class="footer--icons" src="pictures/instagram.PNG" alt="insta">
+                        <img class="footer--icons" src="pictures/twitter.PNG" alt="twitter">
+                        <img class="footer--icons" src="pictures/youtube.PNG" alt="youtube">
+                        <img class="footer--icons" src="pictures/ppp.PNG" alt="youtube">
+                        <img class="footer--icons" src="pictures/linkedin.PNG" alt="linkedin">
+                  </div>
+              <div class="footer--div">Copyright@2019 Mateusz Kaproń </div> 
+              
+             
+           
+        </div>
+    </footer>
 </div>
 
 
 
-<footer></footer>
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init({
-      duration: 2000,
+     duration: 2000,
       once: true
   });
 </script>

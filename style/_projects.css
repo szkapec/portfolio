@@ -150,3 +150,12 @@
     margin: 0 100px;
   }
 }
+
+@media (min-width: 1000px) {
+  .project-info:hover {
+    transform: translateX(-26%);
+  }
+  .strona__img:hover ~ .project-info {
+    transform: translateX(-26%);
+  }
+}

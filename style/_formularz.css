@@ -1,5 +1,94 @@
 .formularz {
   width: 100vw;
-  height: 100vh;
-  background-color: khaki;
+  background-color: #7cafa4;
+}
+
+.formularz--opis {
+  padding: 40px 40px 0px 40px;
+  font-size: 25px;
+}
+
+.formularz--form {
+  margin: 40px;
+}
+
+.btn-primary {
+  margin-bottom: 40px;
+}
+
+@media (min-width: 500px) {
+  .form-group {
+    font-size: 25px;
+  }
+  .formularz--opis {
+    font-size: 30px;
+  }
+}
+
+footer {
+  width: 100vw;
+  min-height: 40px;
+  background-color: #534b4b;
+  color: bisque;
+  text-align: center;
+}
+
+footer img {
+  margin-right: 5px;
+  height: 0px;
+  filter: grayscale(90%);
+}
+
+footer img:hover {
+  filter: grayscale(0%);
+}
+
+.footer--img {
+  height: 0px;
+}
+
+@media (min-width: 350px) {
+  .footer--div {
+    text-align: center;
+    font-size: 10px;
+    padding-top: 10px;
+  }
+  .footer--icon {
+    display: block;
+    text-align: center;
+  }
+  .footer--img {
+    display: block;
+    float: right;
+    margin-right: 10px;
+    height: 40px;
+  }
+  .footer--icons {
+    margin-top: 5px;
+    border-radius: 10px;
+  }
+  footer {
+    width: 100vw;
+    min-height: 40px;
+    background-color: #534b4b;
+    color: bisque;
+    text-align: center;
+  }
+  footer img {
+    margin-right: 5px;
+    height: 15px;
+  }
+}
+
+@media (min-width: 500px) {
+  .footer--icons {
+    height: 30px;
+    margin-left: 10px;
+  }
+  .footer--div {
+    font-size: 15px;
+  }
+  .footer--img {
+    margin-right: 30px;
+  }
 }
