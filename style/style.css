@@ -64,6 +64,7 @@ ul.nawigacja li a {
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
+  font-weight: 700;
 }
 
 .sectionOne h3 {
@@ -74,6 +75,7 @@ ul.nawigacja li a {
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
+  font-weight: 700;
 }
 
 @keyframes name {
