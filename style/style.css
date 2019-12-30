@@ -44,6 +44,10 @@ ul.nawigacja li a.one {
   font-weight: 700;
 }
 
+ul.nawigacja li a {
+  color: #4646c4;
+}
+
 /* --------------------------------------nawigacja skończona */
 .sectionOne {
   position: absolute;

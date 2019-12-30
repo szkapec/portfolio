@@ -43,6 +43,9 @@ ul.nawigacja li a.one {
     color: blue;
     font-weight: 700;
 }
+ul.nawigacja li a {
+    color: rgb(70, 70, 196);
+}
 /* --------------------------------------nawigacja skończona */
 
 .sectionOne {
@@ -500,6 +503,7 @@ filter: brightness(1);
         width: 100vw;
         background-size:  cover;
     }
+
 
     ul.nawigacja li {
         font-size: 16px;
