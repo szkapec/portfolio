@@ -13,7 +13,8 @@
 
 
 </head>
-<body>
+<!-- onLoad="window.alert('Okno komunikatu wyświetlane przy wejściu na stronę')" onUnload="window.alert('Okno komunikatu wyświetlane przy opuszczaniu strony')" -->
+<body >
     <!-- <img src="pictures/gory.jpg" alt="gory"> -->
     <header class="head">
         <nav>
@@ -393,6 +394,17 @@
     
     
         </section>
+        <div class="uwaga">
+            <div class="uwaga--text">
+                    Korzystając z witryny wyrażasz zgodę na przetwarzanie Twoich danych osobowych na zasadach opisanych w polityce 
+                    prywatności. Jeśli nie chcesz aby Twoje dane były zbierane prosimy o wyłączenie cookies w menu przeglądarki.
+            </div>
+          
+                <div class="uwaga--polityka">
+                        <button id="usun" type="button" class="btn btn-light">Akceptuj</button>
+                        <a class="polityka--informacje" href="https://pl.wikipedia.org/wiki/Polityka_prywatno%C5%9Bci">Więcej informacji</a>
+                </div>
+        </div>
     
 <div class="formularz">
 
@@ -453,5 +465,6 @@
 </script>
     <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
+    
 </body>
 </html>

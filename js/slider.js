@@ -75,3 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     adjustImagesSize();
     initEvents();
 });
+
+
+
+

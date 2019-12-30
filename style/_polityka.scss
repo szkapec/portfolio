@@ -1,0 +1,57 @@
+.polityka {
+    color: rgb(50, 44, 44);
+   text-decoration:none;
+}
+.polityka:hover {
+    color: black;
+}
+
+.uwaga {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background-color:rgba(209, 187, 187,0.7);
+}
+.uwaga--polityka {
+width: 100vw;
+margin-top: 10px;
+margin-bottom: 10px;
+text-align: center;
+font-size: 8px;
+}
+.uwaga--text {
+    margin: 10px 20px;
+    font-size: 8px;
+}
+
+.btn.btn-light {
+    margin-right: 20px;
+}
+
+@media(min-width: 450px) {
+    .uwaga--text {
+        margin: 10px 20px;
+        font-size: 12px;
+    }
+    .uwaga--polityka {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 12px;
+        }
+}
+@media(min-width:800px) {
+    .uwaga--text {
+        margin: 10px 20px;
+        font-size: 16px;
+        margin: 15px 50px;
+    }
+    .uwaga--polityka {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 16px;
+        }
+}
