@@ -481,27 +481,45 @@ ul.nawigacja li a.one {
     background-size: cover;
   }
   ul.nawigacja li {
-    font-size: 12px;
+    font-size: 16px;
   }
   ul.nawigacja li a:hover {
     color: cyan;
-    font-size: 16px;
+    font-size: 17px;
     border-bottom: 1px solid cyan;
   }
+  .sectionOne {
+    display: flex;
+    float: right;
+    list-style-type: none;
+    margin: 20px 30px;
+    flex-wrap: wrap;
+  }
+  .sectionOne a img {
+    margin: 20px;
+  }
   .sectionOne h1 {
-    font-size: 1em;
+    font-size: 18px;
+    width: 100vw;
   }
   .sectionOne h3 {
-    font-size: 0.7em;
+    width: 100vw;
+    font-size: 15px;
+  }
+  .sectionOne .image {
+    width: 100vw;
+  }
+  .sectionOne .imagetwo {
+    width: 100vw;
   }
   .all {
-    height: 19px;
+    height: 30px;
   }
   .powieksz {
-    height: 20px;
+    height: 30px;
   }
   .powieksz:hover {
-    height: 30px;
+    height: 35px;
   }
   /* strona 2 */
   .pageTwo {
