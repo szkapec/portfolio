@@ -226,7 +226,6 @@ ul.nawigacja li a.one {
 
 /* koniec strony pierwszej ------------------------------------------------------------ */
 .pageTwo {
-  height: 100vh;
   width: 100%;
   /* background-color: #513e3e; */
   background-color: wheat;
@@ -253,22 +252,18 @@ ul.nawigacja li a.one {
 }
 
 .opis {
-  border-left: 1px solid black;
+  border: 1px solid black;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-area: 1 / 2 / 2 / 3;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .opis h1 {
   padding: 30px;
   overflow: hidden;
-  border: 1px solid black;
 }
 
 .opis h3, h4, p {
@@ -663,6 +658,7 @@ ul.nawigacja li a.one {
         grid-template-columns: 1fr;
     -ms-grid-rows: (1fr)[2];
         grid-template-rows: repeat(2, 1fr);
+    width: 100vw;
   }
   .slider {
     -ms-grid-row: 2;
@@ -680,8 +676,10 @@ ul.nawigacja li a.one {
   }
   .opis h1 {
     padding: 10px;
+    min-width: 200px;
     overflow: hidden;
     border: 1px solid black;
+    border-radius: 5px;
   }
   .opis h3, h4, p {
     margin: 10px;
