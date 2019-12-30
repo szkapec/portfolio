@@ -513,7 +513,7 @@ ul.nawigacja li a.one {
 /* CO MOGE ZAOFEROWAĆ */
 .oferta {
   width: 100%;
-  height: 100vh;
+  min-height: 100vw;
   background-color: #2b2f38;
   display: -webkit-box;
   display: -ms-flexbox;

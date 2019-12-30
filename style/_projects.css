@@ -2,6 +2,8 @@
   position: relative;
   padding-bottom: 100px;
   background-color: #F6F6F6;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .single-project {
@@ -12,7 +14,7 @@
 }
 
 .single-project img {
-  width: 100%;
+  width: 100vw;
 }
 
 .project-info {
@@ -22,7 +24,7 @@
   justify-content: space-around;
   align-items: center;
   height: 100%;
-  width: 100%;
+  width: 100vw;
   top: 0;
   left: 0;
   color: white;
@@ -45,8 +47,12 @@
   height: 30px;
 }
 
+.col-12.col-lg-6 {
+  padding: 0;
+}
+
 .project__h1 {
-  width: 100%;
+  width: 100vw;
   height: 80px;
   font-size: 20px;
   text-align: center;

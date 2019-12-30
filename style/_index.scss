@@ -192,6 +192,7 @@ ul.nawigacja li a.one {
         border: 1px solid black;
         grid-area: 1 / 2 / 2 / 3; 
         text-align: center;
+        margin: 10px;
     }
 
 
@@ -218,6 +219,7 @@ ul.nawigacja li a.one {
     .slider {
         max-width: 800px;
         margin: 10px;
+        margin-top: 30px;
       }
       
       .slider__images-container {
@@ -303,6 +305,7 @@ ul.nawigacja li a.one {
     text-align: center;
     box-sizing: border-box;
     padding: 20px;
+    width: 100vw; 
     margin: 30px;
     font-weight: 700;
     background-color: rgb(164, 135, 135);
@@ -317,7 +320,7 @@ grid-template-rows: repeat(3, 1fr);
 grid-column-gap: 0px;
 grid-row-gap: 0px;
 height: 100vh;
-width: 100%;  
+width: 100vw;  
 }
 
 .umiejetnosci__pierwsze { 
@@ -403,8 +406,7 @@ filter: brightness(1);
 /* CO MOGE ZAOFEROWAĆ */
 
 .oferta {
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
     background-color:#2b2f38;
     display: flex;
     flex-wrap: wrap;
@@ -415,7 +417,7 @@ filter: brightness(1);
 .oferta__h1 {
     position: relative;
     text-align: center;
-    width: 100%;
+    width: 100vw;
     height: 100px;
     box-sizing: border-box;
     padding: 20px;
@@ -454,20 +456,20 @@ filter: brightness(1);
 .stos .stos__tech {
     font-weight: 700;
     font-size: 30px;
-    width: 100%;
+    width: 100vw;
     border-bottom: 1px solid black;
 }
 .zaawansowane{
     font-weight: 700;
     font-size: 30px;
-    width: 100%;
+    width: 100vw;
     border-bottom: 1px dotted black;
     margin: 0px 30px;
 }
 .stos__reg {
     font-weight: 700;
     font-size: 30px;
-    width: 100%;
+    width: 100vw;
     padding: 20px 0;
     border-bottom: 1px dotted black;
 }
@@ -794,7 +796,7 @@ filter: brightness(1);
     font-size: 25px;
     width: 100%;
     margin: 15px;
-    height: 30px;
+    height: 40px;
     border-bottom: 1px solid black;
 }
 
@@ -816,11 +818,13 @@ filter: brightness(1);
 .stos div {
     height: 50px;
     width: 100px;
-    margin: 5px 5px;
+    margin: 10px 5px 10px 5px;
     font-size: 20px;
 }
 .stos div > div {
     margin: 0;
+}
+.stos__img--two {
 }
 }
 
