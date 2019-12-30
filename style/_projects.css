@@ -53,16 +53,20 @@
 
 .project__h1 {
   width: 100vw;
-  height: 80px;
-  font-size: 20px;
+  height: 60px;
+  font-size: 12px;
   text-align: center;
 }
 
 .project__p {
-  font-size: 15px;
+  font-size: 10px;
   width: 100%;
-  height: 40px;
+  height: 30px;
   text-align: center;
+}
+
+.project__p img {
+  width: 20px;
 }
 
 .info-text {
@@ -79,11 +83,39 @@
   margin: 0 10px;
 }
 
-.opis {
-  font-size: 8px;
+.opist {
+  font-size: 12px;
   margin: 0 50px;
-  border-right: 1px solid black;
-  border-radius: 10px;
+}
+
+.opist__one {
+  font-size: 12px;
+  margin: 0 50px;
+  margin-top: 20px;
+}
+
+@media (min-width: 350px) {
+  .project__h1 {
+    height: 60px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .project__p {
+    font-size: 15px;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+  }
+  .project__p img {
+    width: 100%;
+  }
+  .opist {
+    font-size: 15px;
+  }
+  .opist__one {
+    font-size: 15px;
+    margin-top: 40px;
+  }
 }
 
 @media (min-width: 500px) {
@@ -100,21 +132,6 @@
   }
 }
 
-.project__h1 {
-  height: 80px;
-  font-size: 25px;
-}
-
-.project__p {
-  font-size: 20px;
-  height: 40px;
-}
-
-.opis {
-  font-size: 18px;
-  margin: 0 100px;
-}
-
 @media (min-width: 900px) {
   .project__h1 {
     height: 120px;
@@ -124,7 +141,11 @@
     font-size: 25px;
     height: 40px;
   }
-  .opis {
+  .opist {
+    font-size: 25px;
+    margin: 0 100px;
+  }
+  .opist__one {
     font-size: 25px;
     margin: 0 100px;
   }
