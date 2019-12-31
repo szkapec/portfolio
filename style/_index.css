@@ -499,6 +499,7 @@ ul.nawigacja li a {
     list-style-type: none;
     margin: 20px 30px;
     flex-wrap: wrap;
+    font-weight: 700;
   }
   .sectionOne a img {
     margin: 20px;
@@ -509,7 +510,8 @@ ul.nawigacja li a {
   }
   .sectionOne h3 {
     width: 100vw;
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: 700;
   }
   .sectionOne .image {
     width: 100vw;
