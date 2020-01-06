@@ -16,17 +16,62 @@
 <!-- onLoad="window.alert('Okno komunikatu wyświetlane przy wejściu na stronę')" onUnload="window.alert('Okno komunikatu wyświetlane przy opuszczaniu strony')" -->
 <body >
     <!-- <img src="pictures/gory.jpg" alt="gory"> -->
-    <header class="head">
+    <header class="head" id="jeden">
         <nav>
             <ul class="nawigacja" data-aos="fade-right">
-                <li> <a class="one" href=""> Home </a></li>
-                <li> <a href=""> O mnie </a></li>
-                <li> <a href=""> Umiejętności </a></li>
-                <li> <a href="">Projekty </a> </li>
-                <li> <a href=""> Cechy </a></li>
-                <li> <a href=""> Kontakt </a></li>
+                <li> <a href="#jeden"> Home </a></li>
+                <li> <a href="#dwa"> O mnie </a></li>
+                <li> <a href="#trzy"> Umiejętności </a></li>
+                <li> <a href="#cztery">Cechy </a> </li>
+                <li> <a href="#piec"> Projekty </a></li>
+                <li> <a href="#szesc"> Kontakt </a></li>
             </ul>
         </nav>
+        
+        <div class="crolling">
+            <ul class="scrolling__ul">
+                    <li>
+                        <a href="#jeden">   
+                               
+                                    <img class="kropka" src="pictures/circle.png" alt="kropka"> 
+                                    <span class="home"> Home </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#dwa"> 
+                            <img class="kropka" src="pictures/circle.png" alt="kropka"> 
+                            <span class="home">O mnie</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#trzy">
+                            <img class="kropka" src="pictures/circle.png" alt="kropka"> 
+                            <span class="home"> Skills</span>
+                           </a>
+                        </li>
+                        <li>
+                        <a href="#cztery">
+                            <img class="kropka" src="pictures/circle.png" alt="kropka"> 
+                            <span class="home">Cechy</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#piec">
+                            <img class="kropka" src="pictures/circle.png" alt="kropka"> 
+                            <span class="home">Projekty</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#szesc">
+                                <img class="kropka" src="pictures/circle.png" alt="kropka"> 
+                                <span class="home">Kontakt</span>
+                            </a>
+                        </li>
+               
+            </ul>
+         
+        </div>
         <section class="sectionOne">
             <h1>Mateusz Kaproń</h1>
             <h3>Front-end developer</h3>
@@ -48,7 +93,7 @@
     </header>
 
    
-        <section class="sectionPage">
+        <section class="sectionPage" id="dwa">
             <div class="pageTwo">
            
 
@@ -91,7 +136,7 @@
     </section>
 
 
-    <h1 class="center">Umiejętności </h1>
+    <h1 id="trzy" class="center">Umiejętności </h1>
     <main class="umiejetnosci">
        
         <div class="umiejetnosci__pierwsze" data-aos="flip-down">
@@ -174,7 +219,7 @@
     
 
     
-    <main class="oferta">
+    <main class="oferta" id="cztery">
             <h1 class="oferta__h1">Co mogę zaoferować? </h1> 
             
         <div data-aos="flip-left">
@@ -267,7 +312,7 @@
     </main>
 
 
-    <section class="project"> 
+    <section class="project" id="piec"> 
             <h1 class="project__h1">
              Zapraszam do oglądania moich projektów 
              <p class="project__p">Lub zapraszam na mojego Githuba! <a href="https://github.com/szkapec">
@@ -392,22 +437,20 @@
                 </div>
             </div>
     </div>
-    
-    
+
         </section>
         <div class="uwaga">
             <div class="uwaga--text">
                     Korzystając z witryny wyrażasz zgodę na przetwarzanie Twoich danych osobowych na zasadach opisanych w polityce 
                     prywatności. Jeśli nie chcesz aby Twoje dane były zbierane prosimy o wyłączenie cookies w menu przeglądarki.
             </div>
-          
                 <div class="uwaga--polityka">
                         <button id="usun" type="button" class="btn btn-light">Akceptuj</button>
                         <a class="polityka--informacje" href="https://pl.wikipedia.org/wiki/Polityka_prywatno%C5%9Bci">Więcej informacji</a>
                 </div>
         </div>
     
-<div class="formularz">
+<div class="formularz" id="szesc">
 
     <div class="formularz--opis">Zapraszam do wypełnienia formularza</div>
 
@@ -436,7 +479,6 @@
 <!--  -->
     </div>
     <footer> 
-
         <div class="footer--icon">
                 <div class="footer--img">
                         <img class="footer--icons" src="pictures/facebook.PNG" alt="fb">
@@ -458,6 +500,7 @@
       once: true
   });
 </script>
+    <script src="js/scroller.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
     

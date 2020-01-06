@@ -41,6 +41,7 @@ footer img {
 
 footer img:hover {
   filter: grayscale(0%);
+  transition: 1s;
 }
 
 .footer--img {
