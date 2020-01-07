@@ -1,0 +1,26 @@
+.english {
+  padding: 15px 40px;
+  /*1-togora i dol a 2 to prawa i lewa xD   */
+  border-style: none;
+  /*zresetowanie obramowania */
+  margin: 50px 0px 0px 0px;
+  margin-top: 50px;
+  /* to samo co u gory tylko inaczej zapisane   */
+  background-color: yellow;
+  font-size: 40px;
+  text-transform: uppercase;
+  /* duze litery   */
+  border-radius: 20px;
+  /* zaokraglenie */
+  box-shadow: 0 0 0 8px black, 0 0 0 20px yellow, 0 0 0 28px green;
+  /* przesuniecie cienia w prawo/ dol / rozmycie/ obramowania/ kolor...  nastepnie dodajemy do tego samego kolejne przesuniecie */
+  transition: 0.8s;
+  /* powolna animacja */
+  cursor: pointer;
+  /* zmienia sie kursor czyli myszka po najechaniu xD */
+}
+
+.english:hover {
+  /*  cos sie wydary  po najechaniu mysza! */
+  box-shadow: 0 0 0 12px black, 0 0 0 24px yellow, 0 0 0 32px green;
+}

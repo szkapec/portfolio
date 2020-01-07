@@ -14,20 +14,26 @@
 
 </head>
 <!-- onLoad="window.alert('Okno komunikatu wyświetlane przy wejściu na stronę')" onUnload="window.alert('Okno komunikatu wyświetlane przy opuszczaniu strony')" -->
-<body >
+<body>
+
+
     <!-- <img src="pictures/gory.jpg" alt="gory"> -->
     <header class="head" id="jeden">
         <nav>
             <ul class="nawigacja" data-aos="fade-right">
                 <li> <a href="#jeden"> Home </a></li>
-                <li> <a href="#dwa"> O mnie </a></li>
-                <li> <a href="#trzy"> Umiejętności </a></li>
-                <li> <a href="#cztery">Cechy </a> </li>
-                <li> <a href="#piec"> Projekty </a></li>
-                <li> <a href="#szesc"> Kontakt </a></li>
+                <li> <a class="polishDwa" href="#dwa"> O mnie </a></li>
+                <li> <a class="umiejetnosciA2" href="#trzy"> Umiejętności </a></li>
+                <li> <a class="cechyA2" href="#cztery">Cechy </a> </li>
+                <li> <a class="projektyA2" href="#piec"> Projekty </a></li>
+                <li> <a class="kontaktA2" href="#szesc"> Kontakt </a></li>
             </ul>
         </nav>
-        
+       <div class="btnEngPl">
+        <button class="polish">PL</button>
+
+        <button class="english">En</button>
+    </div>
         <div class="crolling">
             <ul class="scrolling__ul">
                     <li>
@@ -53,7 +59,7 @@
                         <li>
                         <a href="#cztery">
                             <img class="kropka" src="pictures/circle.png" alt="kropka"> 
-                            <span class="home">Cechy</span>
+                            <span class="home ">Cechy</span>
                         </a>
                     </li>
                     <li>
@@ -123,12 +129,12 @@
                
 
         <div class="opis">
-            <h1>Witam na moim portfolio! </h1>
-            <h3>Nazywam się Mateusz Kaproń, pochodzę z okolic Lublina i jestem Front-End Developerem. </h3>
-            <h4>Posiadam wyższe wykształcenie informatyczne i ponad 2-letnie doświadczenie w pracy jako programista JavaScript.</h4>
-            <p>Moim celem jest stałe poszerzanie wiedzy dotyczącej najbardziej efektywnych technologii i metod tworzenia aplikacji
+            <h1 class="opish1A2">Witam na moim portfolio! </h1>
+            <h3 class="opish2A2">Nazywam się Mateusz Kaproń, pochodzę z okolic Lublina i jestem Front-End Developerem. </h3>
+            <h4 class="opish3A2">Posiadam wyższe wykształcenie informatyczne i ponad 2-letnie doświadczenie w pracy jako programista JavaScript.</h4>
+            <p class="opish4A2">Moim celem jest stałe poszerzanie wiedzy dotyczącej najbardziej efektywnych technologii i metod tworzenia aplikacji
                  internetowych. Aktualnie skupiam się na nauce React hooks.</p>
-                 <p>Zapraszam do obejrzenia moich projektów oraz na Github :) </p>
+                 <p class="opish5A2">Zapraszam do obejrzenia moich projektów oraz na Github :) </p>
                    <a href="https://github.com/" alt="githublink"> <img data-aos="flip-up"  class="opis__github" src="pictures/github.svg" alt="githube"></a>
             
         </div>
@@ -224,24 +230,24 @@
             
         <div data-aos="flip-left">
             <img  src="pictures/rwdd.svg" alt="Responsive">
-            <div class="oferta__opis">Strony RWD</div>
+            <div id="oferta2" class="oferta__opis">Strony RWD</div>
         </div>
         <div data-aos="flip-left">  
             <img src="pictures/RWD.svg" alt="Elastycznosc">
-            <div class="oferta__opis">Elastyczny projekt </div>
+            <div id="oferta3" class="oferta__opis">Elastyczny projekt </div>
         </div>
         <div data-aos="flip-left">
                 
             <img src="pictures/uklad.svg" alt="Elestyczny układ">
-            <div class="oferta__opis">Nowoczesny układ</div>
+            <div id="oferta4" class="oferta__opis">Nowoczesny układ</div>
         </div>
         <div data-aos="flip-left">        
              <img src="pictures/anime.svg" alt="Animacje">
-             <div class="oferta__opis">Animacje</div>
+             <div id="oferta5" class="oferta__opis">Animacje</div>
         </div>
         <div data-aos="flip-left">
             <img src="pictures/precision.svg" alt="Precyzja">
-            <div class="oferta__opis">Precyzja</div>
+            <div id="oferta6" class="oferta__opis">Precyzja</div>
         </div>
         
         
@@ -503,6 +509,7 @@
     <script src="js/scroller.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/tlumaczenie.js"></script>
     
 </body>
 </html>

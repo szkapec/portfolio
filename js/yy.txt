@@ -1,0 +1,39 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.scrolling__ul {
+width: 100px;
+}
+
+
+
+.kropka {
+    display: flex;
+    flex-wrap: nowrap;
+    position: fixed;
+    right: 5px;
+    height: 15px;
+}
+
+.home {
+    display: flex;
+    flex-wrap: nowrap;
+    opacity: ;
+    right: 100px;
+    width: 100px;
+}
+.scrolling__ul {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    list-style-type: none;
+}
+
+
+.kropka:hover ~ .home {
+    opacity: 1;
+}
