@@ -13,6 +13,7 @@
   width: 100%;
   height: 100vh;
   font-family: "Jura", sans-serif;
+  z-index: -1;
 }
 
 ul.nawigacja {

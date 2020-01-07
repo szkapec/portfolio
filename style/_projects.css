@@ -45,6 +45,10 @@
 
 .img-pictures-github {
   height: 30px;
+  width: 100vw;
+  text-align: center;
+  align-content: center;
+  align-items: center;
 }
 
 .col-12.col-lg-6 {
@@ -53,7 +57,7 @@
 
 .project__h1 {
   width: 100vw;
-  height: 60px;
+  height: 30px;
   font-size: 12px;
   text-align: center;
 }

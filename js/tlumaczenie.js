@@ -1,5 +1,5 @@
-const english = document.querySelector('.english');
-const polish = document.querySelector('.polish')
+const english = document.querySelector('.btn1');
+const polish = document.querySelector('.btn2')
 
 
 
@@ -8,10 +8,9 @@ const polish = document.querySelector('.polish')
 
 const enn = () => {
 
-
-    english.className = "active"
-    polish.className = "polish"
-
+    polish.classList.remove('activi')
+    english.classList.add('activi')
+    
 
     document.querySelector('.polishDwa').innerHTML = "About me"
     document.querySelector('.umiejetnosciA2').innerHTML="Skills"
@@ -38,18 +37,31 @@ const enn = () => {
     document.querySelector('.zaawansowane').innerHTML="advanced"
     document.querySelector('.stos__reg').innerHTML="Regular"
 
-    // document.querySelector('.project__h1').innerHTML="I invite you to view my projects"
-    // document.querySelector('.project__p').innerHTML="Or welcome to my Github! "
-    // document.querySelector('.opist__one').innerHTML="Portfolio"
+    document.querySelector('.polishDwa').innerHTML="About me"
+    document.querySelector('.umiejetnosciA2').innerHTML="Skills"
+    document.querySelector('.cechyA2').innerHTML="Features"
+    document.querySelector('.projektyA2').innerHTML="Projects"
+    document.querySelector('.kontaktA2').innerHTML="Contact"
+
+    document.querySelectorAll('.technologiewykorzystane').innerHTML = "technologies used"
+    document.querySelector('.appPogodowaJ').innerHTML = "Weather application"
+    document.querySelector('.generowanieUzytkownika').innerHTML = "User generation"
+    document.querySelector('.zadaniaDoWykonania').innerHTML = "To-do"
+    document.querySelector('.uwaga--text').innerHTML = "By using the website you agree to the processing of your personal data on the principles described in the policy privacy. If you do not want your data to be collected, please disable cookies in the browser menu."
+    
+
+    document.querySelector('.project__h1').innerHTML="I invite you to view my projects"
+    document.querySelector('.project__p').innerHTML="Or welcome to my Github! "
+    document.querySelector('.opist__one').innerHTML="Portfolio"
 }
 
 
 
 
 const pll = () => {
-
-    polish.className = "active"
-    english.className = "english"
+  
+    english.classList.remove('activi')
+    polish.classList.add('activi')
 
 
     document.querySelector('.polishDwa').innerHTML = "O mnie"
@@ -77,9 +89,23 @@ const pll = () => {
     document.querySelector('.zaawansowane').innerHTML="Zaawansowane"
     document.querySelector('.stos__reg').innerHTML="Regularny"
 
-    // document.querySelector('.project__h1').innerHTML="Zapraszam do oglądania moich projektów "
-    // document.querySelector('.project__p').innerHTML="Lub zapraszam na mojego Githuba! "
-    // document.querySelector('.opist__one').innerHTML="Portfolio"
+    document.querySelector('.polishDwa').innerHTML="O mnie"
+    document.querySelector('.umiejetnosciA2').innerHTML="Skills"
+    document.querySelector('.cechyA2').innerHTML="Cechy"
+    document.querySelector('.projektyA2').innerHTML="Projecty"
+    document.querySelector('.kontaktA2').innerHTML="Kontact"
+
+    document.querySelectorAll('.technologiewykorzystane').innerHTML = "Użyte technologie"
+    document.querySelector('.appPogodowaJ').innerHTML = "Aplikacja pogodowa"
+    document.querySelector('.generowanieUzytkownika').innerHTML = "Generowanie użytkownika"
+    document.querySelector('.zadaniaDoWykonania').innerHTML = "Zadania do wykonania"
+    document.querySelector('.uwaga--text').innerHTML = "Korzystając z witryny wyrażasz zgodę na przetwarzanie Twoich danych osobowych na zasadach opisanych w polityce prywatności. Jeśli nie chcesz aby Twoje dane były zbierane prosimy o wyłączenie cookies w menu przeglądarki."
+    
+
+
+    document.querySelector('.project__h1').innerHTML="Zapraszam do oglądania moich projektów "
+    document.querySelector('.project__p').innerHTML= "Lub zapraszam na mojego Githuba! "
+    document.querySelector('.opist__one').innerHTML="Portfolio"
 }
 
 

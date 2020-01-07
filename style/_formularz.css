@@ -26,11 +26,13 @@
 }
 
 footer {
+  position: initial;
   width: 100vw;
   min-height: 40px;
   background-color: #534b4b;
   color: bisque;
   text-align: center;
+  z-index: -1;
 }
 
 footer img {

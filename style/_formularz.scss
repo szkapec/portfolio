@@ -29,11 +29,13 @@
 // FOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOTER
 
 footer {
+    position: initial;
     width: 100vw;
     min-height: 40px;
     background-color: rgb(83, 75, 75);
     color: bisque;
     text-align: center;
+    z-index: -1;
 
     img {
         margin-right: 5px;
@@ -49,6 +51,7 @@ footer {
 .footer--img {
     height: 0px;
 }
+
 
 @media(min-width: 350px) {
 

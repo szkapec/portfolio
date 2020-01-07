@@ -13,6 +13,7 @@
   width: 100%;
   height: 100vh;
   font-family: "Jura", sans-serif;
+  z-index: -1;
 }
 
 ul.nawigacja {
@@ -1083,11 +1084,13 @@ ul.nawigacja li a {
 }
 
 footer {
+  position: initial;
   width: 100vw;
   min-height: 40px;
   background-color: #534b4b;
   color: bisque;
   text-align: center;
+  z-index: -1;
 }
 
 footer img {
@@ -1215,6 +1218,13 @@ footer img:hover {
 
 .img-pictures-github {
   height: 30px;
+  width: 100vw;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .col-12.col-lg-6 {
@@ -1223,7 +1233,7 @@ footer img:hover {
 
 .project__h1 {
   width: 100vw;
-  height: 60px;
+  height: 30px;
   font-size: 12px;
   text-align: center;
 }
@@ -1448,6 +1458,7 @@ html {
 
 .activ {
   color: #11ff11;
+  opacity: 1;
 }
 
 .activ-color {
@@ -1465,7 +1476,26 @@ html {
   }
 }
 
-.active {
-  background-color: red;
+.btnn {
+  border: 1px solid #3498db;
+  background: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-family: montserrat;
+  cursor: pointer;
+  margin: 10px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn1, .btn2 {
+  color: #3498db;
+}
+
+.btnn .btn2 .activi {
+  border: 3px solid red;
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */
