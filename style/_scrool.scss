@@ -11,10 +11,6 @@ html {
     list-style-type: none;
 }
 
-.scrolling__li a {
-color: white;
-
-}
 
 
 .kropka {
@@ -22,6 +18,7 @@ color: white;
     width: 15px;
     opacity: 1;
     right: 20px;
+    z-index: 999;
 }
 
 .home {
@@ -31,12 +28,14 @@ color: white;
     transform: translateX(-50%); 
     transition: .5s;    
     opacity: 0;
-    color: white;
+    color: black;
+    font-size: 15px;
+    z-index: 999;
 }
 
 .kropka:hover ~ .home {
     opacity: 1;
-    transition: 2s
+    transition: 1s;
 }
 
 .kropka:hover {
@@ -45,14 +44,24 @@ color: white;
     border: 2px solid white;
     transition: .3s;
 }
+.activ {
+    color: rgb(17, 255, 17);
+}
+.activ-color {
+    background-color: rgb(17, 255, 17);
+    border: 2px solid white;
+    border-radius: 50%;
+   
+}
+@media(max-width: 600px) {
+
+    .home {
+        font-size: 10px;
+        width: 42px;
+        right: 10px;
+        margin-top: 3px;
+    }
 
 
 
-/* 
-    position: absolute;            
-    top: -3px;
-    left: -30%; 
-    transform: translateX(-50%);   
-    opacity: 0;
-    transition: .5s;   
-*/ 
+}

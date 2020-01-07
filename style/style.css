@@ -981,12 +981,11 @@ footer img:hover {
 }
 
 .project {
-  position: relative;
+  position: initial;
   padding-bottom: 100px;
   background-color: #F6F6F6;
   width: 100vw;
   overflow: hidden;
-  z-index: 0;
 }
 
 .single-project {
@@ -1218,15 +1217,12 @@ html {
   list-style-type: none;
 }
 
-.scrolling__li a {
-  color: white;
-}
-
 .kropka {
   position: relative;
   width: 15px;
   opacity: 1;
   right: 20px;
+  z-index: 999;
 }
 
 .home {
@@ -1236,12 +1232,14 @@ html {
   transform: translateX(-50%);
   transition: .5s;
   opacity: 0;
-  color: white;
+  color: black;
+  font-size: 15px;
+  z-index: 999;
 }
 
 .kropka:hover ~ .home {
   opacity: 1;
-  transition: 2s;
+  transition: 1s;
 }
 
 .kropka:hover {
@@ -1251,14 +1249,25 @@ html {
   transition: .3s;
 }
 
-/* 
-    position: absolute;            
-    top: -3px;
-    left: -30%; 
-    transform: translateX(-50%);   
-    opacity: 0;
-    transition: .5s;   
-*/
+.activ {
+  color: #11ff11;
+}
+
+.activ-color {
+  background-color: #11ff11;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  .home {
+    font-size: 10px;
+    width: 42px;
+    right: 10px;
+    margin-top: 3px;
+  }
+}
+
 .active {
   background-color: red;
 }
