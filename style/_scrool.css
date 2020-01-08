@@ -9,6 +9,7 @@ html {
   top: 50%;
   transform: translate(0, -50%);
   list-style-type: none;
+  z-index: 999;
 }
 
 .kropka {
@@ -22,7 +23,7 @@ html {
 .home {
   position: absolute;
   width: 60px;
-  right: 10px;
+  right: 65px;
   transform: translateX(-50%);
   transition: .5s;
   opacity: 0;
@@ -60,5 +61,6 @@ html {
     width: 42px;
     right: 10px;
     margin-top: 3px;
+    right: 50px;
   }
 }

@@ -42,6 +42,8 @@ transition: 1s;
 
 .umiejetnosci__pierwsze, .umiejetnosci__dwa, .umiejetnosci__trzecie {
 display: flex;
+height: 200px;
+
 
 }
 .pudelko {
@@ -145,74 +147,76 @@ filter: brightness(1);
 
 
 
-// @media (min-width: 600px) {
+@media (min-width: 600px) {
     /* Strona 3 umiejetnosci */
-// .center {
-//     font-size: 30px;
-//     margin: 0;
-// }
+.center {
+    font-size: 30px;
+    margin: 0;
+}
 
-// .umiejetnosci img {
-//     height: 60px;
-//     margin: 0px;
-//     padding: 0px;
-// }
+.umiejetnosci img {
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+}
 
-// .umiejetnosci__pierwsze, .umiejetnosci__dwa, .umiejetnosci__trzecie {
-//     display: flex;
-//     flex-wrap: wrap;
-// }
+.umiejetnosci__pierwsze, .umiejetnosci__dwa, .umiejetnosci__trzecie {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-// .pudelko {
-//     position: relative;
-//     text-align: center;
-//     margin: 20px;
-//     height: 90px;
-//     width: 60px;
-// }
-// .pudelko .narzedzie {
-//     font-size: 15px;
-// }
-// .doswiadczenie { 
-//     font-size: 15px;
-// }
+.pudelko {
+    position: relative;
+    text-align: center;
+    margin: 20px;
+    height: 90px;
+    width: 60px;
+}
+.pudelko .narzedzie {
+    font-size: 15px;
+}
+.doswiadczenie { 
+    font-size: 15px;
+}
+}
 
 /* strona 4 co mozna zaoferowac */
 
 
-// @media (min-width: 900px) {
+@media (min-width: 900px) {
      /* Strona 3 umiejetnosci */
 
-            // .center {
-            //     font-size: 40px;
-            //     margin: 0;
-            // }
+            .center {
+                font-size: 40px;
+                margin: 0;
+            }
             
-            // .umiejetnosci img {
-            //     height: 100px;
-            //     margin: auto;
-            //     padding: 0px;
-            // }
+            .umiejetnosci img {
+                height: 70px;
+                margin: auto;
+                padding: 0px;
+            }
             
-            // .umiejetnosci__pierwsze, .umiejetnosci__dwa, .umiejetnosci__trzecie {
-            //     display: flex;
-            //     flex-wrap: wrap;
-            // }
+            .umiejetnosci__pierwsze, .umiejetnosci__dwa, .umiejetnosci__trzecie {
+                display: flex;
+                flex-wrap: wrap;
+                height: 250px;
+            }
             
-            // .pudelko {
-            //     position: relative;
-            //     text-align: center;
-            //     margin: 50px;
-            //     height: 90px;
-            //     width: 60px;
-            // }
-            // .pudelko .narzedzie {
-            //     font-size: 20px;
-            //     width: 100px;
+            .pudelko {
+                position: relative;
+                text-align: center;
+                margin: 50px;
+                height: 90px;
+                width: 60px;
+            }
+            .pudelko .narzedzie {
+                font-size: 20px;
+                width: 100px;
                
-            // }
-            // .doswiadczenie { 
-            //     font-size: 15px;
-            // }
-
+            }
+            .doswiadczenie { 
+                font-size: 15px;
+            }
+        }
             /* Strona 4 stos technologiczny  */

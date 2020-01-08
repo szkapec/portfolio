@@ -304,7 +304,7 @@ ul.nawigacja li a {
 /* CO MOGE ZAOFEROWAĆ */
 .oferta {
   width: 100vw;
-  background-color: #2b2f38;
+  background-color: #474b54;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
@@ -806,7 +806,7 @@ footer img:hover {
 .project {
   position: initial;
   padding-bottom: 100px;
-  background-color: #F6F6F6;
+  background-color: #dcdde1;
   width: 100vw;
   overflow: hidden;
 }
@@ -1042,6 +1042,7 @@ html {
   top: 50%;
   transform: translate(0, -50%);
   list-style-type: none;
+  z-index: 999;
 }
 
 .kropka {
@@ -1055,7 +1056,7 @@ html {
 .home {
   position: absolute;
   width: 60px;
-  right: 10px;
+  right: 65px;
   transform: translateX(-50%);
   transition: .5s;
   opacity: 0;
@@ -1093,6 +1094,7 @@ html {
     width: 42px;
     right: 10px;
     margin-top: 3px;
+    right: 50px;
   }
 }
 
@@ -1172,6 +1174,7 @@ html {
 
 .umiejetnosci__pierwsze, .umiejetnosci__dwa, .umiejetnosci__trzecie {
   display: flex;
+  height: 200px;
 }
 
 .pudelko {
@@ -1260,7 +1263,67 @@ html {
 }
 
 /* Strona 4 co mozna zaoferowac  */
-/* Strona 3 umiejetnosci */
+@media (min-width: 600px) {
+  /* Strona 3 umiejetnosci */
+  .center {
+    font-size: 30px;
+    margin: 0;
+  }
+  .umiejetnosci img {
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .umiejetnosci__pierwsze, .umiejetnosci__dwa, .umiejetnosci__trzecie {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .pudelko {
+    position: relative;
+    text-align: center;
+    margin: 20px;
+    height: 90px;
+    width: 60px;
+  }
+  .pudelko .narzedzie {
+    font-size: 15px;
+  }
+  .doswiadczenie {
+    font-size: 15px;
+  }
+}
+
 /* strona 4 co mozna zaoferowac */
-/* Strona 3 umiejetnosci */
+@media (min-width: 900px) {
+  /* Strona 3 umiejetnosci */
+  .center {
+    font-size: 40px;
+    margin: 0;
+  }
+  .umiejetnosci img {
+    height: 70px;
+    margin: auto;
+    padding: 0px;
+  }
+  .umiejetnosci__pierwsze, .umiejetnosci__dwa, .umiejetnosci__trzecie {
+    display: flex;
+    flex-wrap: wrap;
+    height: 250px;
+  }
+  .pudelko {
+    position: relative;
+    text-align: center;
+    margin: 50px;
+    height: 90px;
+    width: 60px;
+  }
+  .pudelko .narzedzie {
+    font-size: 20px;
+    width: 100px;
+  }
+  .doswiadczenie {
+    font-size: 15px;
+  }
+}
+
 /* Strona 4 stos technologiczny  */
