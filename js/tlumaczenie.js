@@ -47,7 +47,6 @@ const enn = () => {
     document.querySelector('.appPogodowaJ').innerHTML = "Weather application"
     document.querySelector('.generowanieUzytkownika').innerHTML = "User generation"
     document.querySelector('.zadaniaDoWykonania').innerHTML = "To-do"
-    document.querySelector('.uwaga--text').innerHTML = "By using the website you agree to the processing of your personal data on the principles described in the policy privacy. If you do not want your data to be collected, please disable cookies in the browser menu."
     
 
     document.querySelector('.project__h1').innerHTML="I invite you to view my projects"
@@ -99,7 +98,6 @@ const pll = () => {
     document.querySelector('.appPogodowaJ').innerHTML = "Aplikacja pogodowa"
     document.querySelector('.generowanieUzytkownika').innerHTML = "Generowanie użytkownika"
     document.querySelector('.zadaniaDoWykonania').innerHTML = "Zadania do wykonania"
-    document.querySelector('.uwaga--text').innerHTML = "Korzystając z witryny wyrażasz zgodę na przetwarzanie Twoich danych osobowych na zasadach opisanych w polityce prywatności. Jeśli nie chcesz aby Twoje dane były zbierane prosimy o wyłączenie cookies w menu przeglądarki."
     
 
 
