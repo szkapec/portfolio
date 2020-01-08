@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-console.log("Dziala")
 
 const jeden = document.querySelector('#jeden')
 
@@ -44,7 +43,6 @@ const elem6 = document.querySelector('.formularz')
 
 window.addEventListener('scroll', () => {
     let pozycja = window.scrollY;
-    console.log(pozycja)
     const jeden = document.getElementById('jeden')
     const jeden1 = document.getElementById('jeden1')
     

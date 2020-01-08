@@ -1297,3 +1297,14 @@ html {
   border: 3px solid red;
   color: red;
 }
+
+@media (max-width: 600px) {
+  .btnn {
+    margin: 10px;
+    font-size: 10px;
+    padding: 4px 10px;
+  }
+  .btn2 {
+    margin-left: 40px;
+  }
+}
