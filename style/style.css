@@ -8,7 +8,6 @@ html {
   margin: 0;
   padding: 0;
   font-family: "Jura", sans-serif;
-  max-width: 100%;
 }
 
 .head {
@@ -304,7 +303,7 @@ ul.nawigacja li a {
 /* CO MOGE ZAOFEROWAĆ */
 .oferta {
   width: 100vw;
-  background-color: #474b54;
+  background-color: #65686f;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
@@ -1055,8 +1054,8 @@ html {
 
 .home {
   position: absolute;
-  width: 60px;
-  right: 65px;
+  width: 40px;
+  right: 55px;
   transform: translateX(-50%);
   transition: .5s;
   opacity: 0;
@@ -1091,8 +1090,7 @@ html {
 @media (max-width: 600px) {
   .home {
     font-size: 10px;
-    width: 42px;
-    right: 10px;
+    width: 15px;
     margin-top: 3px;
     right: 50px;
   }
@@ -1319,7 +1317,6 @@ html {
   }
   .pudelko .narzedzie {
     font-size: 20px;
-    width: 100px;
   }
   .doswiadczenie {
     font-size: 15px;

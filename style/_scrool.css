@@ -22,8 +22,8 @@ html {
 
 .home {
   position: absolute;
-  width: 60px;
-  right: 65px;
+  width: 40px;
+  right: 55px;
   transform: translateX(-50%);
   transition: .5s;
   opacity: 0;
@@ -58,8 +58,7 @@ html {
 @media (max-width: 600px) {
   .home {
     font-size: 10px;
-    width: 42px;
-    right: 10px;
+    width: 15px;
     margin-top: 3px;
     right: 50px;
   }

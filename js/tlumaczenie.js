@@ -52,6 +52,16 @@ const enn = () => {
     document.querySelector('.project__h1').innerHTML="I invite you to view my projects"
     document.querySelector('.project__p').innerHTML="Or welcome to my Github! "
     document.querySelector('.opist__one').innerHTML="Portfolio"
+
+
+    document.querySelector('.formularz--opis').innerHTML="I invite you to fill out the form"
+    document.querySelector('.formGroupExampleInput1').innerHTML="Name:"
+    document.querySelector('.inputEmail4').innerHTML="Give me your e-mail address:"
+    document.querySelector('.exampleFormControlTextarea2').innerHTML="Enter the message"
+
+    document.querySelector('.placeholder1').placeholder = "Give your name"
+    document.querySelector('.placeholder3').placeholder = "write to me a message"
+    document.querySelector('.btn-primary').innerHTML = "Send a message"
 }
 
 
@@ -104,6 +114,15 @@ const pll = () => {
     document.querySelector('.project__h1').innerHTML="Zapraszam do oglądania moich projektów "
     document.querySelector('.project__p').innerHTML= "Lub zapraszam na mojego Githuba! "
     document.querySelector('.opist__one').innerHTML="Portfolio"
+
+    document.querySelector('.formularz--opis').innerHTML="Zapraszam do wypełnienia formularza"
+    document.querySelector('.formGroupExampleInput1').innerHTML="Imię:"
+    document.querySelector('.inputEmail4').innerHTML="Podaj swój adres Email:"
+    document.querySelector('.exampleFormControlTextarea2').innerHTML="Napisz wiadomość"
+
+    document.querySelector('.placeholder1').placeholder = "Podaj swoje imie"
+    document.querySelector('.placeholder3').placeholder = "napisz do mnie wiadomość"
+    document.querySelector('.btn-primary').innerHTML = "Wyślij wiadomość"
 }
 
 
