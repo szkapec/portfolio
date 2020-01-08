@@ -345,7 +345,7 @@ width: 100vw;
 
 
 .umiejetnosci img {
-height: 120px;
+height: 300px;
 margin: 40px;
 padding: 0px;
 transition: 1s;
@@ -369,6 +369,7 @@ text-align: center;
 }
 .pudelko img {
 filter: brightness(0.8);
+
 }
 
 .umiejetnosci img:hover ~ .narzedzie {
@@ -382,6 +383,7 @@ animation-name: html;
 }
 .pudelko img:hover {
 filter: brightness(1);
+
 }
 
 @keyframes stare {
@@ -599,7 +601,7 @@ filter: brightness(1);
 }
 
 .umiejetnosci img {
-    height: 30px;
+    height: 50px;
     margin: 0px;
     padding: 0px;
 }
@@ -612,15 +614,15 @@ filter: brightness(1);
 .pudelko {
     position: relative;
     text-align: center;
-    margin: 0;
+    margin: 5px;
     height: 90px;
     width: 60px;
 }
 .pudelko .narzedzie {
-    font-size: 10px;
+    font-size: 15px;
 }
 .doswiadczenie { 
-    font-size: 10px;
+    font-size: 15px;
 }
 
 
