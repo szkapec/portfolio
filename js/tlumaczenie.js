@@ -51,7 +51,7 @@ const enn = () => {
 
     document.querySelector('.project__h1').innerHTML="I invite you to view my projects"
     document.querySelector('.project__p').innerHTML="Or welcome to my Github! "
-    document.querySelector('.opist__one').innerHTML="Portfolio"
+    // document.querySelector('.opist__one').innerHTML="Portfolio"
 
 
     document.querySelector('.formularz--opis').innerHTML="I invite you to fill out the form"
@@ -62,6 +62,23 @@ const enn = () => {
     document.querySelector('.placeholder1').placeholder = "Give your name"
     document.querySelector('.placeholder3').placeholder = "write to me a message"
     document.querySelector('.btn-primary').innerHTML = "Send a message"
+
+
+    document.querySelector('.full-stack').innerHTML = "Aplication fullstack"
+    document.querySelector('.react-router').innerHTML = "Project React Router"
+    document.querySelector('.react-notes').innerHTML = "Application for adding Notes"
+    document.querySelector('.aplikacja-pogodowa').innerHTML = "Weather application design"
+    document.querySelector('.project-roboto').innerHTML = "Project roboto"
+    document.querySelector('.gra-snake').innerHTML = "Snake project game"
+    document.querySelector('.gra-kregle').innerHTML = "Bowling project game"
+    document.querySelector('.gra-tenis').innerHTML = "Tenis project game"
+   
+    document.querySelector('#dwa2').innerHTML = "Abautme";
+    document.querySelector('#trzy3').innerHTML = "Skills";
+    document.querySelector('#cztery4').innerHTML = "Features";
+    document.querySelector('#piec5').innerHTML = "Projects";
+    document.querySelector('#szesc6').innerHTML = "Contact";
+
 }
 
 
@@ -113,7 +130,7 @@ const pll = () => {
 
     document.querySelector('.project__h1').innerHTML="Zapraszam do oglądania moich projektów "
     document.querySelector('.project__p').innerHTML= "Lub zapraszam na mojego Githuba! "
-    document.querySelector('.opist__one').innerHTML="Portfolio"
+    // document.querySelector('.opist__one').innerHTML="Portfolio"
 
     document.querySelector('.formularz--opis').innerHTML="Zapraszam do wypełnienia formularza"
     document.querySelector('.formGroupExampleInput1').innerHTML="Imię:"
@@ -123,6 +140,26 @@ const pll = () => {
     document.querySelector('.placeholder1').placeholder = "Podaj swoje imie"
     document.querySelector('.placeholder3').placeholder = "napisz do mnie wiadomość"
     document.querySelector('.btn-primary').innerHTML = "Wyślij wiadomość"
+
+
+    document.querySelector('.full-stack').innerHTML = "Aplikacja full-stack"
+    document.querySelector('.react-router').innerHTML = "Projekt React Router"
+    document.querySelector('.react-notes').innerHTML = "Aplikacja do dodawania Notatek"
+    document.querySelector('.aplikacja-pogodowa').innerHTML = "Projekt aplikacji pogodowej"
+    document.querySelector('.project-roboto').innerHTML = "Projekt Roboto"
+    document.querySelector('.gra-snake').innerHTML = "Gra w Snake"
+    document.querySelector('.gra-kregle').innerHTML = "Projekt Gra w kręgle"
+    document.querySelector('.gra-tenis').innerHTML = "Gra w tenisa"
+
+
+    document.querySelector('#dwa2').innerHTML = "Omnie";
+    document.querySelector('#trzy3').innerHTML = "Skills";
+    document.querySelector('#cztery4').innerHTML = "Cechy";
+    document.querySelector('#piec5').innerHTML = "Projekty";
+    document.querySelector('#szesc6').innerHTML = "Kontakt";
+
+
+
 }
 
 

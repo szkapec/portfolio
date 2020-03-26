@@ -179,15 +179,10 @@ ul.nawigacja li a {
 .pageTwo {
   width: 100%;
   /* background-color: #513e3e; */
-  background-color: wheat;
+  background-color: #95a5a6;
 }
 
 .pageTwo {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
   overflow: hidden;
 }
 
@@ -196,19 +191,24 @@ ul.nawigacja li a {
 }
 
 .opis {
-  border: 1px solid black;
   grid-area: 1 / 2 / 2 / 3;
   text-align: center;
   margin: 10px;
 }
 
 .opis h1 {
-  padding: 30px;
+  padding: 10px;
   overflow: hidden;
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+.opis h3 {
+  max-width: 800px;
+  margin: 10px auto;
 }
 
 .opis h3, h4, p {
-  margin: 30px;
   font-size: 30px;
 }
 
@@ -218,92 +218,10 @@ ul.nawigacja li a {
 }
 
 /* SLIDERRRRRR---------------------------- */
-.slider {
-  max-width: 800px;
-  margin: 10px;
-  margin-top: 30px;
-}
-
-.slider__images-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 66.66667%;
-}
-
-.slider__image-container {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  overflow: hidden;
-}
-
-.slider__image-container img {
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 800px;
-  position: absolute;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.slider__image-container.slider__image-container--first {
-  width: 100%;
-}
-
-.slider__image-container.slider__image-container--second {
-  width: 50%;
-}
-
-.slider__divider {
-  position: absolute;
-  width: 3px;
-  height: 100%;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  background: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.slider__divider .slider__handle {
-  border-radius: 50%;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  background: white;
-  width: 40px;
-  height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-/*# sourceMappingURL=style.css.map */
 /* CO MOGE ZAOFEROWAĆ */
 .oferta {
   width: 100vw;
-  background-color: #65686f;
+  background-color: #34495e;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
@@ -434,22 +352,10 @@ ul.nawigacja li a {
     height: 35px;
   }
   /* strona 2 */
-  .pageTwo {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    width: 100vw;
-  }
-  .slider {
-    grid-area: 2 / 1 / 3 / 2;
-  }
-  .opis {
-    grid-area: 1 / 1 / 2 / 2;
-  }
   .opis h1 {
     padding: 10px;
     min-width: 200px;
     overflow: hidden;
-    border: 1px solid black;
     border-radius: 5px;
   }
   .opis h3, h4, p {
@@ -618,25 +524,21 @@ ul.nawigacja li a {
     width: 100vw;
   }
   /* Strona 2 */
-  .pageTwo {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    overflow: hidden;
+  .opis h3 {
+    max-width: 800px;
+    margin: 10px auto;
   }
-  .slider {
-    grid-area: 1 / 1 / 2 / 2;
+  .opis h4 {
+    max-width: 800px;
+    margin: 10px auto;
   }
-  .opis {
-    border-left: 1px solid black;
-    grid-area: 1 / 2 / 2 / 3;
+  .opish4A2 {
+    max-width: 900px;
+    margin: 10px auto;
   }
   .oferta {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    background-color: #2b2f38;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
@@ -664,7 +566,7 @@ ul.nawigacja li a {
   }
   .oferta div > div {
     text-align: center;
-    margin: 20px 0px;
+    margin: 10px 0px;
   }
   .oferta img {
     height: 50px;
@@ -693,7 +595,6 @@ ul.nawigacja li a {
     font-weight: 700;
     font-size: 30px;
     width: 100%;
-    padding: 20px 0;
     border-bottom: 1px dotted black;
   }
   .stos div {

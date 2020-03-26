@@ -45,12 +45,12 @@ html {
 }
 
 .activ {
-  color: #11ff11;
+  color: #f8faf8;
   opacity: 1;
 }
 
 .activ-color {
-  background-color: #11ff11;
+  background-color: #f8faf8;
   border: 2px solid white;
   border-radius: 50%;
 }

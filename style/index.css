@@ -173,20 +173,19 @@ ul.nawigacja li a.one {
 
 .pageTwo {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   overflow: hidden;
 }
 
-.slider {
+/* .slider {
   grid-area: 1 / 1 / 2 / 2;
-}
+} */
 
 .opis {
   border-left: 1px solid black;
-  grid-area: 1 / 2 / 2 / 3;
   text-align: center;
   justify-content: center;
 }
@@ -199,7 +198,7 @@ ul.nawigacja li a.one {
 
 .opis h3, h4, p {
   margin: 30px;
-  font-size: 30px;
+  font-size: 50px;
 }
 
 .opis__github {
@@ -208,7 +207,7 @@ ul.nawigacja li a.one {
 }
 
 /* SLIDERRRRRR---------------------------- */
-.slider {
+/* .slider {
   max-width: 800px;
   margin: 10px;
 }
@@ -286,7 +285,7 @@ ul.nawigacja li a.one {
   -ms-flex-pack: center;
   justify-content: center;
   cursor: pointer;
-}
+} */
 
 /*# sourceMappingURL=style.css.map */
 /* UMIEJETNOSCI */
