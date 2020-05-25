@@ -7,4 +7,3 @@
     
     
    //  element.addEventListener('click', zniknij)
-    

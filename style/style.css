@@ -120,6 +120,7 @@ ul.nawigacja li a {
 .powieksz {
   height: 70px;
   margin: 30px;
+  transition-duration: 1s;
 }
 
 .image {
@@ -153,7 +154,7 @@ ul.nawigacja li a {
   box-sizing: border-box;
   padding: 50px;
   content: "";
-  opacity: 0;
+  opacity: 1;
   translate: inherit;
   transition: 1s;
 }
@@ -162,7 +163,7 @@ ul.nawigacja li a {
   opacity: 1;
   content: "mateusz.kapron24@gmail.com";
   font-size: 25px;
-  color: #8dd882;
+  color: #c72c2c;
   font-weight: 600;
 }
 
@@ -170,7 +171,7 @@ ul.nawigacja li a {
   opacity: 1;
   content: "661-360-889";
   font-size: 25px;
-  color: #c72c2c;
+  color: #8dd882;
   font-weight: 600;
   letter-spacing: 5px;
 }
@@ -619,6 +620,10 @@ ul.nawigacja li a {
   margin: 40px;
 }
 
+.btn {
+  background-color: #ecf0f1;
+}
+
 .btn-primary {
   margin-bottom: 40px;
 }
@@ -709,6 +714,12 @@ footer img:hover {
   background-color: #95a5a6;
   width: 100vw;
   overflow: hidden;
+}
+
+.project__play {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 20px auto;
 }
 
 .single-project {
@@ -914,6 +925,9 @@ footer img:hover {
     font-size: 25px;
     margin: 0 100px;
   }
+  .project__play {
+    font-size: 25px;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -930,6 +944,11 @@ footer img:hover {
     max-width: 400px;
     font-size: 16px;
     flex-wrap: wrap;
+  }
+  .project__play {
+    height: 50px;
+    width: 90%;
+    margin: 30px auto;
   }
 }
 

@@ -122,6 +122,8 @@ ul.nawigacja li a {
 .powieksz {
     height: 70px;
     margin: 30px;
+    transition-duration: 1s;
+
 }
 .image {
     text-align: center;
@@ -153,27 +155,33 @@ ul.nawigacja li a {
     box-sizing: border-box;
     padding: 50px;
     content: "";
-    opacity: 0;
+    opacity: 1;
 
     translate: inherit;
     transition: 1s;
+
+
 }
+
 
 .twopicture:hover ~ .odpowiedzz:before  {
     opacity: 1;
     content: "mateusz.kapron24@gmail.com";
     font-size: 25px;
-    color: rgb(141, 216, 130);
+    color: rgb(199, 44, 44);
     font-weight: 600;
+ 
     
 }
 .onepicture:hover ~ .odpowiedzz:before {
     opacity: 1;
     content: "661-360-889";
     font-size: 25px;
-    color: rgb(199, 44, 44);
+
+    color: rgb(141, 216, 130);
     font-weight: 600;
     letter-spacing: 5px;
+
 }
 
 

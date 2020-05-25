@@ -5,7 +5,12 @@
     width: 100vw;
     overflow: hidden;
   }
-  
+  .project__play {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 20px auto;
+  }
+
   .single-project {
     position: relative;
     display: flex;
@@ -208,6 +213,11 @@
         font-size: 25px;
         margin: 0 100px;
       }
+      .project__play {
+        font-size: 25px;
+
+      }
+      
 
   }
 
@@ -231,6 +241,11 @@
     flex-wrap: wrap;
   }
   
+  .project__play {
+    height: 50px;
+    width: 90%;
+    margin: 30px auto;
+  }
   }
 
   @media(min-width:1400px) {
